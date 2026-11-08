@@ -1,0 +1,16 @@
+name: sensor-har
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - jupyter
+  - numpy
+  - ipykernel
+  - seaborn
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - pip
+  - pip:
+      - pyTorch
+prefix: C:\Users\karna\miniconda3\envs\sensor-har
