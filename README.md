@@ -16,6 +16,19 @@ The primary objectives are:
 
 **This is an experimental sensor-data classification and hardware benchmarking project, not an automotive perception system.** It provides practical experience with time-series processing and accelerator-based inference relevant to sensor-data applications.
 
+
+## Experiment Overview
+
+The following infographic summarizes the dataset, sensor configuration, and experimental setup used in this project.
+
+<p align="center">
+  <img
+    src="reports/figures/dataset_experiment_overview.png"
+    alt="UCI HAR dataset and experiment overview"
+    width="100%"
+  />
+</p>
+
 ## 2. Dataset
 
 **Dataset:** [UCI Human Activity Recognition Using Smartphones](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones)
@@ -146,6 +159,39 @@ For GPU and TPU experiments, CPU-to-accelerator batch transfers are included in 
 
 The CPU experiment uses the same batching and warm-up protocol without accelerator transfers.
 
+
+### Hardware Performance Visualizations
+
+**Inference Throughput**
+
+<p align="center">
+  <img
+    src="reports/figures/throughput_comparison.png"
+    alt="Inference throughput comparison across CPU, GPU and TPU"
+    width="100%"
+  />
+</p>
+
+**Inference Latency**
+
+<p align="center">
+  <img
+    src="reports/figures/inference_latency_comparison.png"
+    alt="Average inference latency with standard deviation"
+    width="100%"
+  />
+</p>
+
+**Timing Variability**
+
+<p align="center">
+  <img
+    src="reports/figures/timing_variability_comparison.png"
+    alt="Inference timing variability across hardware"
+    width="100%"
+  />
+</p>
+
 ### Software environment
 
 The environments were not identical:
@@ -205,10 +251,13 @@ The benchmark should therefore be interpreted as a practical comparison of these
 ## 8. Repository Structure
 
 ```text
+
 sensor-har-pytorch-accelerators/
 │
 ├── data/
 │   ├── raw/
+│   │   └── README.md
+│   │
 │   └── processed/
 │       └── har_preprocessed.pt
 │
@@ -231,9 +280,17 @@ sensor-har-pytorch-accelerators/
 │   └── hardware_comparison.csv
 │
 ├── reports/
+│   └── figures/
+│       ├── dataset_experiment_overview.png
+│       ├── throughput_comparison.png
+│       ├── inference_latency_comparison.png
+│       └── timing_variability_comparison.png
 │
 ├── paths.py
-└── README.md
+├── environment.yml
+├── README.md
+└── .gitignore
+
 ```
 
 ## 9. Reproducing the Experiments
