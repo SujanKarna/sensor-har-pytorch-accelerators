@@ -1,0 +1,2 @@
+device,tpu_name,average_time_seconds,average_batch_time_ms,throughput_samples_per_second,tpu_memory_gb,pytorch_version,batch_size,test_samples,warmup_strategy,benchmark_runs
+tpu,Google TPU v5e,0.07966398433336508,1.6949783900715973,36992.877329206465,16,2.14.1+cpu,64,2947,full_dataset,3

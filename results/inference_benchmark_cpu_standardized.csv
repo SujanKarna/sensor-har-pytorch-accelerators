@@ -1,0 +1,2 @@
+device,hardware,average_time_seconds,median_time_seconds,std_time_seconds,average_batch_time_ms,throughput_samples_per_second,test_samples,batch_size,warmup_passes,benchmark_runs
+CPU,Local CPU,0.09635330001280333,0.09706110000843182,0.0018008332841977595,2.050070213038369,30585.356179896335,2947,64,1,3

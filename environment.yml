@@ -1,16 +1,28 @@
+
 name: sensor-har
+
 channels:
+  - conda-forge
   - defaults
+
 dependencies:
+  # Python environment
   - python=3.11
-  - jupyter
-  - numpy
-  - ipykernel
-  - seaborn
-  - pandas
-  - matplotlib
-  - scikit-learn
   - pip
+
+  # Jupyter environment
+  - jupyter
+  - ipykernel
+
+  # Data processing and analysis
+  - numpy
+  - pandas
+  - scikit-learn
+
+  # Data visualization
+  - matplotlib
+  - seaborn
+
+  # Deep learning
   - pip:
-      - pyTorch
-prefix: C:\Users\karna\miniconda3\envs\sensor-har
+      - torch

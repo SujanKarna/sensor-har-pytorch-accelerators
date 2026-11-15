@@ -1,0 +1,2 @@
+device,hardware,average_time_seconds,median_time_seconds,std_time_seconds,average_batch_time_ms,throughput_samples_per_second,test_samples,batch_size,warmup_passes,benchmark_runs
+GPU,Tesla T4,0.04933792000000873,0.04684693900003367,0.005487210863241775,1.04974297872359,59730.933124044925,2947,64,1,3
