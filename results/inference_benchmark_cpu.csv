@@ -1,0 +1,2 @@
+device,average_time_seconds,average_batch_time_ms,throughput_samples_per_second,cpu_logical_cores,pytorch_version,batch_size,test_samples,warmup_batches,benchmark_runs
+cpu,0.08850053333056469,1.8829900708630787,33299.23435593827,16,2.15.0+cpu,64,2947,5,3

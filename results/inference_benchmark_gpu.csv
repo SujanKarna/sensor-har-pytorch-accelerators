@@ -1,0 +1,2 @@
+device,gpu_name,average_time_seconds,average_batch_time_ms,throughput_samples_per_second,gpu_memory_mb,pytorch_version,cuda_version,batch_size,test_samples,warmup_batches,benchmark_runs
+cuda,Tesla T4,0.05974692600011622,1.2712111914918345,49324.71337511603,14912.6875,2.14.1+cu130,13.0,64,2947,5,3
